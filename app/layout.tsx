@@ -45,7 +45,7 @@ export default function RootLayout({
             <ClientLayout>{children}</ClientLayout>
           </AuthProvider>
         </Suspense>
-      <Analytics />
+        <Analytics />
       </body>
     </html>
   )
