@@ -38,14 +38,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <>
-      <Suspense>
-        <AuthProvider>
-          <ClientLayout>{children}</ClientLayout>
-        </AuthProvider>
-      </Suspense>
+    <html lang="es">
+      <body>
+        <Suspense>
+          <AuthProvider>
+            <ClientLayout>{children}</ClientLayout>
+          </AuthProvider>
+        </Suspense>
       <Analytics />
-    </>
+      </body>
+    </html>
   )
 }
 
